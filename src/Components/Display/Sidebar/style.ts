@@ -2,10 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     grid-area: SB;
-    
-    body {
-        background-color: #f5f5f5;
-    }
 
     #checkbox, .btn span { /* Hide the checkbox input & word "Menu" in the button */
         display: none;
@@ -14,8 +10,8 @@ export const Container = styled.div`
     /* Menu button - starts */
     .btn {
         display: block;
-        background-color: #2B2E33;
-        color: #fff;
+        background-color: ${props => props.theme.themeColors.primaryColor};
+        color: ${ props => props.theme.themeColors.whiteColor };
         width: 55px;
         height: 50px;
         line-height: 50px;
@@ -27,7 +23,7 @@ export const Container = styled.div`
 
     /* Sidebar - starts */
     .sidebar {
-        background-color: #2B2E33;
+        background-color: ${props => props.theme.themeColors.primaryColor};
         position: fixed;
         width: 250px;
         height: 100%;
@@ -62,7 +58,7 @@ export const Container = styled.div`
         top: 50%;
         right: 15px;
         margin-top: -9px;
-        color: #fff;
+        color: ${ props => props.theme.themeColors.whiteColor };
         font-size: 13px;
         padding: 0 7px;
         height: 18px;
@@ -80,7 +76,7 @@ export const Container = styled.div`
 
     .sidebar ul a:nth-child(3)::after {
         content: "2";
-        background-color: #247D9E;
+        background-color: ${ props => props.theme.themeColors.tertiaryColor };
     }
 
     /* Add margin to the icon in the second item */
@@ -91,7 +87,7 @@ export const Container = styled.div`
 
     .sidebar ul a:hover, .sidebar ul a.active {
         background-color: #161920;
-        color: #fff;
+        color: ${ props => props.theme.themeColors.whiteColor };
     }
 
     .sidebar ul a:hover::before, .sidebar ul a.active::before {
@@ -99,7 +95,7 @@ export const Container = styled.div`
         top: 0;
         left: 0;
         content: "";
-        background-color: #247D9E;
+        background-color: ${ props => props.theme.themeColors.tertiaryColor };
         width: 4px;
         height: 100%;
     }
@@ -122,7 +118,7 @@ export const Container = styled.div`
     
     .img_avatar {
         align-items: center;
-        border: 4px solid #247D9E;
+        border: 4px solid ${ props => props.theme.themeColors.avatarBorderColor };
         border-radius: 50%;
         padding: 1px;
         left: 60px;
