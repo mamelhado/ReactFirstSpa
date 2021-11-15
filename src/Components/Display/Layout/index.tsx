@@ -2,14 +2,14 @@ import React from "react";
 import { DisplayLayout } from "./style";
 
 import Header from "../Header";
-import Sidebar from "../Sidebar";
 import Content from "../Content";
+import Sidebar from "../Sidebar";
 
 const Layout: React.FC = () => {
     return(
         <DisplayLayout>
             <Header/>
-            <Sidebar/>
+            <Sidebar/>       
             <Content/>
         </DisplayLayout>
     );

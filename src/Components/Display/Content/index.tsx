@@ -1,13 +1,12 @@
 import React from "react";
 import { Container } from "./style";
 
-
-const Header: React.FC = () => {
+const Content: React.FC = () => {  
     return(
         <Container>
-            <h1>Header</h1>
+            <h1>Content</h1>
         </Container>
     );
 };
 
-export default Header;
+export default Content;
