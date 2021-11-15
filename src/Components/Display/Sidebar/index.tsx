@@ -26,12 +26,12 @@ const Sidebar: React.FC = () => {
             <div className="sidebar">
                 <img src={paris} alt="Avatar" className="img_avatar"></img>
                 <ul>
-                    <a href="#"><li><FontAwesomeIcon icon={faCogs} />Workflows</li></a>
-                    <a href="#"><li><FontAwesomeIcon icon={faClipboard} />Reports</li></a>
+                    <a href="#"><li><FontAwesomeIcon icon={faCogs} />Menu 1</li></a>
+                    <a href="#"><li><FontAwesomeIcon icon={faClipboard} />Menu 2</li></a>
                     <a href="#"><li><FontAwesomeIcon icon={faTachometerAlt} />Dashboard</li></a>
-                    <a href="#"><li><FontAwesomeIcon icon={faTools} />Tools</li></a>
-                    <a href="#" className="active"><li><FontAwesomeIcon icon={faAddressCard} />Admin</li></a>
-                    <a href="#"><li><FontAwesomeIcon icon={faFireExtinguisher} />Contingency</li></a>
+                    <a href="#"><li><FontAwesomeIcon icon={faTools} />Menu 3</li></a>
+                    <a href="#" className="active"><li><FontAwesomeIcon icon={faAddressCard} />Menu 4</li></a>
+                    <a href="#"><li><FontAwesomeIcon icon={faFireExtinguisher} />Menu 5</li></a>
                 </ul>
             </div>
         </Container>
